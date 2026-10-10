@@ -1,0 +1,80 @@
+/* Natural colors inspired by the user's Eagle design references. */
+@media screen{
+  :root{color-scheme:light;--bg:#f3efe6;--paper:#fffdf7;--ink:#26382e;--muted:#657166;--line:#cdd2c3;--green:#9b542f;--gold:#9b542f;--light:#e6eadc;--soft:#e9eddf}
+  body{background:radial-gradient(ellipse at 0 900px,#e2e7d6 0,transparent 1100px),#f3efe6;color:var(--ink)}
+  .topbar{background:rgba(23,43,34,.88)}
+  .toprow:after{background:rgba(236,235,218,.22)}
+  .hero{background:#273a2e}
+  .hero:after{background:linear-gradient(90deg,rgba(17,32,23,.58),rgba(17,32,23,.08) 75%),linear-gradient(180deg,rgba(12,26,19,.13) 20%,rgba(12,26,19,.15) 61%,#f3efe6 100%)}
+  .hero .summary{background:rgba(28,48,34,.81);backdrop-filter:blur(12px);padding:0 24px;border-color:#a9b29766;box-shadow:0 18px 40px #223a2120}
+  .hero .summary:after{background:#cba47c}
+  .hero h1,.hero .big-number{color:#fffdf6}
+  .hero .fan-total p{color:#d6dfd1}
+  .hero-scroll{color:#273d2d}
+  .report-portals,.section{position:relative;isolation:isolate;border-bottom:0}
+  .report-portals:before,.section:before{content:"";position:absolute;inset:0 auto 0 50%;width:100vw;transform:translateX(-50%);z-index:-1;pointer-events:none;background:var(--section-surface,transparent)}
+  .report-portals{padding-top:54px;padding-bottom:65px}
+  .report-portals:before{background:radial-gradient(ellipse at 95% 40%,#dde3cb88,transparent 55%),url('./assets/background-topography.svg') right -180px center/650px no-repeat,#f3efe6}
+  .portals-header h2{color:#2a3f30}
+  .portals-header .eyebrow,.portals-header>span{color:#6b765e}
+  .portal{border-color:#7f8e72;box-shadow:0 15px 28px #263b2920}
+  .portal:before{background:linear-gradient(180deg,#12291808 20%,#112519e8)}
+  .portal img{filter:brightness(.98) saturate(.87)}
+  .section{--section-surface:#f3efe6;--ink:#26382e;--muted:#657166;--line:#cdd2c3;--green:#9b542f;--gold:#9b542f;color:var(--ink)}
+  .section[aria-labelledby="account-title"]{--section-surface:linear-gradient(120deg,#e5e9db,#f0eddf 80%)}
+  #growth:before{background:radial-gradient(ellipse at 0 50%,#e9dcc65c,transparent 60%),url('./assets/background-topography.svg') right -220px top 180px/900px no-repeat,#f5f0e6}
+  #content:before{background:radial-gradient(ellipse at 100% 80%,#dce3ce8c,transparent 55%),#f7f3e9}
+  #commerce{--section-surface:linear-gradient(115deg,#e4d8c6,#eee7d8 80%)}
+  #plan:before{background:url('./assets/background-topography.svg') left -300px bottom -150px/1000px no-repeat,linear-gradient(115deg,#dce4d2,#eef0e4)}
+  .section h2,.section h3,.section .facts dd,.section .interval strong,.section .growth-reading li strong,.section .data-gap h3{color:var(--ink)}
+  .section .section-no,.section .eyebrow,.section .source-label{color:var(--gold)}
+  .section .section-head p,.section .facts dt,.section .editorial,.section .inline-source,.section .chart-title span,.section .interval .caption,.section .interval p,.section .data-gap p,.section .takeaway,.section .content-notes p,.section .note,.section .source-list p,.section .works-intro{color:var(--muted)}
+  .section .surface{background:rgba(255,253,246,.88);border-color:var(--line);box-shadow:0 14px 40px #34442906}
+  .section .milestone-buttons button{border-color:#b9c2af;color:var(--ink)}
+  .section .milestone-buttons button[aria-pressed=true]{background:#e3e8d6;border-color:#8d9e78}
+  .section .milestone-buttons span{color:var(--muted)}
+  .section .selection{color:#94603e}
+  .section .data-gap,.section .later-growth,.section .later-metrics,.section .later-metrics>div+div,.section .recent-growth,.section .thresholds article,.section .takeaway,.section .creator-works{border-color:var(--line)}
+  .section .later-metrics strong,.section .bridge-node strong,.section .thresholds strong,.section .recent-value{color:#9b542f}
+  .section .bridge-node{background:#e7eadc;border-color:#b3bea5}
+  .section .bridge-gap{border-color:#b8c1ae;background:repeating-linear-gradient(135deg,transparent,transparent 8px,#8b9d710c 8px,#8b9d710c 9px)}
+  .section .table-wrap{background:#fffdf7;border-color:var(--line);box-shadow:0 10px 30px #34442905}
+  .section th{background:#e0e6d5;color:#44543f}
+  .section td{color:#364537}
+  .section th,.section td{border-color:#d3d7ca}
+  .section .zero-card,.section .metric-card,.section .plan-card{background:#fcf9f0!important;border-color:var(--line)!important}
+  .section .formula div{background:#f8faef;border:1px solid #cad4bb}
+  .section .formula p{color:#5c6f53}
+  .section .work-card{background:#fffdf7;border-color:#cbd3bd;box-shadow:0 12px 24px #39422d08}
+  .section .work-card:hover{background:#f4f5e9;border-color:#aabc90}
+  .section .work-card h3{color:#2b3e2b}
+  .section .work-card p,.section .work-card-top>span:first-child{color:#69765f}
+  .section .work-tag,.section .work-card-foot>span{color:#9a603e}
+  .section .work-card-foot{border-color:#d6dccd}
+  .growth-chart svg text{fill:#63725b}
+  .growth-chart svg path{stroke:#a76a42}
+  .growth-chart svg line{stroke:#d6ddcc}
+  #audience{--ink:#f2f1e5;--muted:#c0ccbb;--line:#72886c6b;--green:#e2ba8b;--gold:#e2ba8b;color:var(--ink)}
+  #audience:before{background:linear-gradient(90deg,#193123f2,#193123d6 60%,#193123b8),url('./assets/creator-luyashan.jpg') center 45%/cover no-repeat}
+  #audience .surface{background:#284333b8;border-color:#81977570;backdrop-filter:blur(9px)}
+  #audience .bar-track{background:#9eae8e30}
+  #audience .bar,#audience .gender-f{background:#d9ae7d}
+  #audience .gender-m{background:#829771}
+  #audience .quiet-button{color:#ead3af;border-color:#9aad8b}
+  #audience .audience-facts{border-color:#81977570}
+  #audience .takeaway{border-color:#81977570}
+  .travel-interlude{margin-top:0;background:#283d2c}
+  .travel-interlude:after{background:linear-gradient(90deg,#162d20db,#162d2040 80%),linear-gradient(180deg,#dce4d2 0,transparent 27%,transparent 70%,#253c2b 100%)}
+  #sources{--ink:#f0efe2;--muted:#bdc8b7;--line:#63795d;--green:#e2ba8b;--gold:#e2ba8b;color:var(--ink)}
+  #sources:before{background:url('./assets/background-topography.svg') right -200px center/850px no-repeat,linear-gradient(110deg,#253c2b,#314931)}
+  #sources .actions .action{background:#cfa97b;border-color:#cfa97b;color:#233621}
+  #sources .actions .secondary{background:transparent;border-color:#a0ad91;color:#e5d1b0}
+  footer{position:relative;isolation:isolate;color:#c0ccb8;background:#253c2b}
+  footer:before{content:"";position:absolute;inset:0 auto 0 50%;width:100vw;transform:translateX(-50%);background:#253c2b;z-index:-1}
+  .footer-row{border-color:#62785b;color:#c0ccb8}
+  .experience-controls{background:#213a2cf0;border-color:#a9b78a80;color:#f4f0df}
+  .music-panel,.music-status{background:#294230;border-color:#778e66;color:#e6d8bd}
+  .music-panel p,.music-panel label,.music-panel output{color:#c4cfba}
+  .reading-progress{background:linear-gradient(90deg,#7a8e59,#d2a371)}
+  @media(max-width:760px){.hero:after{background:linear-gradient(90deg,#13291b77,#13291b13),linear-gradient(180deg,#13291b13 20%,#13291b26 65%,#f3efe6 100%)}.hero .summary{padding:0 12px}.report-portals{padding-block:38px 45px}#audience:before{background:linear-gradient(#193123e8,#193123e0),url('./assets/creator-luyashan.jpg') center/cover no-repeat}.report-portals:before,#growth:before,#plan:before{background-size:650px,auto}}
+}

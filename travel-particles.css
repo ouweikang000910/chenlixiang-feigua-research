@@ -1,0 +1,14 @@
+.particle-field{--particle-ink:#215e37;position:absolute;top:0;left:50%;width:100vw;height:100%;transform:translateX(-50%);z-index:-1;pointer-events:none;overflow:hidden;color:var(--particle-ink);contain:paint}
+.particle-dot{fill:currentColor;opacity:.42;transition:opacity .25s ease}
+.particle-dot.is-near{opacity:.88}
+.particle-links{fill:none;stroke:currentColor;stroke-width:.8;stroke-linecap:round;opacity:0;transition:opacity .22s ease}
+.particle-field.is-connected .particle-links{opacity:.58}
+.report-portals:before,.section:before{z-index:-2}
+.hero>.particle-field,.travel-interlude>.particle-field{z-index:0;--particle-ink:#72a26b}
+.hero-grid,.hero .summary,.hero-scroll,.interlude-inner{position:relative;z-index:1}
+.hero-scroll{position:absolute}
+#audience>.particle-field,#sources>.particle-field{--particle-ink:#89b17b}
+html[data-motion="off"] .particle-links{display:none}
+html[data-motion="off"] .particle-dot{transition:none}
+@media(prefers-reduced-motion:reduce){.particle-links{display:none}.particle-dot{transition:none}}
+@media print{.particle-field{display:none!important}}
